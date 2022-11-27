@@ -16,6 +16,10 @@ let secretNumber = Math.trunc(Math.random()*20) +1;
 
 let score = 20;
 let highscore = 0;
+const displayMessage = function(message){
+    document.querySelector('.message').
+    textContent = message;
+}
 
 
 document.querySelector('.check').addEventListener
@@ -31,13 +35,11 @@ document.querySelector('.check').addEventListener
 /* Guessing related events:*/
  //when there is no input
 if(!guess){
-        document.querySelector('.message').
-    textContent = "Você precisa inserir um número! 😂"
+    displayMessage("Você precisa inserir um número! 😂")
     
     //When player wins
     }else if(guess === secretNumber){
-        document.querySelector('.message').
-        textContent = "✅ Você acertou! 🥳";
+        displayMessage("✅ Você acertou! 🥳");
         score++;
         document.querySelector('.score')
         .textContent = score;
@@ -56,17 +58,14 @@ if(!guess){
     // when guess is wrong
     else if(guess !== secretNumber){
         if(score > 1){
-            guess > secretNumber ?  document.querySelector('.message').
-            textContent = "📈 Muito acima!" : document.querySelector('.message').
-            textContent = "📉 Muito abaixo!";
+              displayMessage(guess > secretNumber ? "📈 Muito acima!" : "📉 Muito abaixo!");
             score--;
             document.querySelector('.score')
             .textContent = score;
             }else{
             document.querySelector('.score')
             .textContent = 0;
-            document.querySelector('.message').
-            textContent = "❌ GAME OVER ❌"
+            displayMessage("❌ GAME OVER ❌");
             document.querySelector('body').style.backgroundColor = '#722F37';
         }
 
@@ -81,8 +80,7 @@ document.querySelector('.again').addEventListener
     score = 20;
     secretNumber = Math.trunc(Math.random()*20) +1;
     
-    document.querySelector('.message').
-    textContent = "Quer tentar novamente? Boa sorte!";
+    displayMessage("Quer tentar novamente? Boa sorte!");
     document.querySelector('.score')
     .textContent = score;
     document.querySelector('.number')
