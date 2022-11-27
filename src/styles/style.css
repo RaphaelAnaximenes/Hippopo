@@ -123,3 +123,9 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+#card {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
