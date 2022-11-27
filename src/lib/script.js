@@ -55,37 +55,29 @@ if(!guess){
     }
 
     // when guess is higher
-    else if(guess > secretNumber){
+    // when guess is wrong
+    else if(guess !== secretNumber){
+        
+        guess > secretNumber ?  document.querySelector('.message').
+        textContent = "📈 Muito acima!" : document.querySelector('.message').
+        textContent = "📉 Muito abaixo!";
+        
         if(score > 1){
-        document.querySelector('.message').
-        textContent = "📈 Muito acima!"
-        score--;
-        document.querySelector('.score')
-        .textContent = score;
-        }else{
-        document.querySelector('.score')
-        .textContent = 0;
-        document.querySelector('.message').
-        textContent = "❌ GAME OVER ❌"
-        }
-    }
-
-    // when guess is lower
-    else if(guess < secretNumber){
-        if(score > 1){
-            document.querySelector('.message').
-            textContent = "📉 Muito abaixo!"
+    
             score--;
             document.querySelector('.score')
             .textContent = score;
-        }else{
+            }else{
             document.querySelector('.score')
             .textContent = 0;
             document.querySelector('.message').
             textContent = "❌ GAME OVER ❌"
+            document.querySelector('body').style.backgroundColor = '#722F37';
         }
+
+
     }
-});
+    });
 
 // Again button 
 
