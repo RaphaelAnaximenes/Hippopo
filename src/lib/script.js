@@ -49,21 +49,16 @@ if(!guess){
 
         if(score > highscore){
             highscore = score;
-            document.querySelector('.highscore').textContent= highscore;
-            preventDefault();
-        }
+            document.querySelector('.highscore').
+            textContent= highscore;
+            }
     }
-
-    // when guess is higher
     // when guess is wrong
     else if(guess !== secretNumber){
-        
-        guess > secretNumber ?  document.querySelector('.message').
-        textContent = "📈 Muito acima!" : document.querySelector('.message').
-        textContent = "📉 Muito abaixo!";
-        
         if(score > 1){
-    
+            guess > secretNumber ?  document.querySelector('.message').
+            textContent = "📈 Muito acima!" : document.querySelector('.message').
+            textContent = "📉 Muito abaixo!";
             score--;
             document.querySelector('.score')
             .textContent = score;
