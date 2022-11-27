@@ -1,5 +1,7 @@
 
+<a href="https://raphaelanaximenes.github.io/Hippopo/">Link to the online BETA playground</a>
 <img style="whidth:50%;height:50%;" src="https://raw.githubusercontent.com/RaphaelAnaximenes/Hippopo/main/src/img/logo.png">
+
 <h1> About / Sobre  </h1>
 
 _Hippopo é um jogo de advinhação, onde voce tenta adivinhar o próximo número. Divirta-se!_
