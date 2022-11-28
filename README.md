@@ -8,8 +8,17 @@ _Hippopo é um jogo de advinhação, onde voce tenta adivinhar o próximo númer
 _Hippopo is a riddle game, where you try to figure out which number comes next. Have Fun!_
 <hr>
 
-<img style="whidth:50%;height:50%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/Hippopo/main/src/img/Hippopo.gif">
+
 <br>
 <hr>
 
-<h1> Coming soon... <h1>
+<h1> 
+  Imagens / images:
+<h1>
+  <img style="whidth:30%;height:30%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/Hippopo/main/src/img/codeHippo.bmp">
+  <img style="whidth:30%;height:30%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/Hippopo/main/src/img/test.png">
+<h1> 
+  Legado / Legacy:
+<h1>
+  <h2>Comming soon (Banner)</h2>
+  <img style="whidth:50%;height:50%" src="https://raw.githubusercontent.com/RaphaelAnaximenes/Hippopo/main/src/img/Hippopo.gif">
